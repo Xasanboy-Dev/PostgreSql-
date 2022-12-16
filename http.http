@@ -1,0 +1,25 @@
+POST  http://localhost:8080/api/jobs/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Developer",
+}
+
+###
+POST http://localhost:8080/api/employers/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Xasanboy",
+    "degree":"Master",
+    "salary":"1000$",
+    "job_id":6
+}
+###
+GET http://localhost:8080/api/employers HTTP/1.1
+
+###
+GET http://localhost:8080/api/jobs HTTP/1.1
+
+###
+DELETE http://localhost:8080/api/jobs/6
